@@ -1,0 +1,420 @@
+.card{
+    border: none;
+    border-radius: 10px;
+}
+.hello-world{
+    padding-bottom: 100px;
+}
+.card img{
+    border-radius: 10px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#home{
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url(https://wallpaperaccess.com/full/38123.jpg);
+    background-position: center;
+    /* background: rgb(71,72,73);
+    background: linear-gradient(138deg, rgb(73, 72, 71) 0%, rgb(25, 22, 22) 56%); */
+}
+.tabs{
+    font-size: 18px;
+    color: #999;
+    font-family: 'Poppins';
+    
+    
+}
+.tabs a:hover{
+    color: white;
+}
+
+.logo{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+}
+.logo:hover{
+    color: white;
+}
+
+.fa-brands{
+    padding: 0px 5px;
+    font-size: 20px;
+    color: white;
+}
+a{
+    color: #999;
+}
+a:active{
+    color: white;
+}
+.photo{
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+.content{
+    margin-top: 60px;
+}
+.content h1{
+    font-size: 60px;
+    color: black;
+    width: 370px;
+    
+    margin: 0 auto;
+    word-spacing: 10px;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.lorem{
+    
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
+
+/* .content button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 16px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.content button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #303030;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+.content button:hover {
+    color: #e8e8e8;
+}
+
+.content button:hover::before {
+    width: 100%;
+} */
+.content button {
+    --color: white;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+}
+
+.content button::before, .content button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+
+.content button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.content button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.content button:hover::before, .content button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.content button:hover {
+    color: rgb(10, 25, 30);
+}
+
+.content button:active {
+    filter: brightness(.8);
+}
+
+.offcanvas{
+    --bs-offcanvas-width: 250px;
+}
+@media (max-width:800px) {
+    .pad{
+        
+        justify-content: space-between;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .bar{
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+}
+.design{
+    position: absolute;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    top:30%;
+    left: 26%;
+}
+.developer{
+    position: absolute;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 34%;
+    right: 23%;
+}
+.logo span{
+    color: deepskyblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+@media (max-width:1300px) {
+    .design{
+        left: 20%;
+    }
+    .developer{
+        right: 20%;
+    }
+    
+}
+@media (max-width:1000px) {
+    .design{
+        left: 10%;
+    }
+    .developer{
+        right: 10%;
+    }
+}
+.underline{
+    border-bottom:4px solid #2E4053 ;
+    width: 200px;
+}
+
+
+.underline-skills{
+    width: 100px;
+}
+#about{
+    background-color:whitesmoke;
+    height: 100%;
+}
+.card-original{
+    
+    transition:transform 0.6s ease-in-out;
+    border-color: white;
+    border-width: 3px;
+}
+.card-original:hover{
+    transform: translate(-15px, -15px);
+    border-color: #2E4053;
+    
+    
+}
+.card-hidden{
+  
+   background-color: #2E4053;
+   border-radius: 10px;
+    
+}
+.card-hidden-skills{
+   
+    background-color: #2E4053;
+    border-radius: 10px;
+}
+.card-hidden-future{
+    
+    background-color: #2E4053;
+    border-radius: 10px;
+}
+.card-hidden-about{
+   
+    background-color: #2E4053;
+    border-radius: 10px;
+}
+.card-hidden-projects{
+   
+    background-color: #2E4053;
+    border-radius: 10px;
+}
+
+.flip{
+    position: absolute;
+    top: -40px;
+    color: cornsilk;
+    left: -60px;
+    transform: scale(-1, 1);
+    color: cornsilk;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    scale: 1.4;
+}
+.down{
+    scale: 2;
+    color: white;
+    margin-top: 5px;
+}
+
+.no-flip{
+    
+    position: absolute;
+    top:-26px;
+    right: -20px;
+    scale: 1.4;
+}
+.column-border{
+    /* border-right: 2px solid #2E4053; */
+}
+
+#project{
+    height: 100%;
+    background: rgb(46,64,83);
+background: linear-gradient(299deg, rgba(46,64,83,1) 0%, rgba(0,17,34,1) 65%);
+   
+
+}
+.bi-cursor{
+    color:white;
+}
+.see{
+    padding: 10px;
+    border: 2px solid #555;
+    font-size: 16px;
+    font-family: 'Poppins';
+    transition: 0.4s;
+}
+.email{
+    background-color: #2E4053;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+.interest{
+    background-color:floralwhite;
+    
+    
+}
+.email:hover{
+    background-color: white;
+    color: #2E4053;
+    border:2px solid #2E4053;
+}
+.see:hover{
+    border: 2px solid white;
+    background-color: #2E4053;
+    color: white;
+}
+#contact{
+    height: 100vh;
+    
+    width: 100vw;
+    background-color:#2E3A46;
+}
+.oval{
+   
+   padding: 20px 30px;
+   border-radius: 100%;
+   
+}
+.form-card{
+    background-color:whitesmoke;
+    
+   
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    
+}
+input{
+    width: 453px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+input:focus{
+    border-bottom: 4px solid #d6205d;
+}
+#name{
+    font-style: italic;
+}
+.helloworld{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #2E4053;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.fill{
+    cursor: pointer;
+}
